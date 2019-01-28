@@ -564,11 +564,3 @@ case "play":
     }
 });
 //-----------------------------------------------------------------------------------------------------------//
-
-
-clientDiscord.on('messageReactionAdd', (reaction, user) => {
-    if(reaction.emoji.name === ":tada:")
-        clientDiscord.channels.get("539256226605957130").send(":tada: :tada: :tada:");
-
-        clientDiscord.channels.get("539256226605957130").send('Reaction' + reaction.emoji.name);
-});
